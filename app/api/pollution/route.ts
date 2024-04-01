@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
     const lat = searchParams.get("lat");
     const lon = searchParams.get("lon");
 
-    const apiKey = process.env.OPENWEATHERMAP_API_KEY;
+    const apiKey = "c05cc54e8ac95bd867aa9ac4ff586ca5";
 
     const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
